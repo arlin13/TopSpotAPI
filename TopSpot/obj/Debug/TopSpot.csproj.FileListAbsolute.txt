@@ -12,3 +12,6 @@ C:\Users\Arlin\Documents\Visual Studio 2013\Projects\OriginCodeAcademy\TopSpot\T
 C:\Users\Arlin\Documents\Visual Studio 2013\Projects\OriginCodeAcademy\TopSpot\TopSpot\obj\Debug\TopSpot.csprojResolveAssemblyReference.cache
 C:\Users\Arlin\Documents\Visual Studio 2013\Projects\OriginCodeAcademy\TopSpot\TopSpot\obj\Debug\TopSpot.dll
 C:\Users\Arlin\Documents\Visual Studio 2013\Projects\OriginCodeAcademy\TopSpot\TopSpot\obj\Debug\TopSpot.pdb
+C:\Users\Arlin\Documents\Visual Studio 2013\Projects\OriginCodeAcademy\TopSpot\TopSpot\bin\System.Web.Cors.dll
+C:\Users\Arlin\Documents\Visual Studio 2013\Projects\OriginCodeAcademy\TopSpot\TopSpot\bin\System.Web.Http.Cors.dll
+C:\Users\Arlin\Documents\Visual Studio 2013\Projects\OriginCodeAcademy\TopSpot\TopSpot\bin\System.Web.Http.Cors.xml
