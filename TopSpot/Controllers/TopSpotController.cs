@@ -27,6 +27,12 @@ namespace TopSpotAPI.Controllers
             TopSpot[] topSpotsArray = JsonConvert.DeserializeObject<TopSpot[]>(topSpotsFile);
 
             // how to add topspot to the array
+            TopSpot newTopSpot = new TopSpot
+            {
+                Name = "0000000",
+                Description = "ASDFKJSHDFKJSHFD"
+            };
+            topSpotsArray[0] = newTopSpot;
 
             // reserealize the array
             topSpotsFile = JsonConvert.SerializeObject(topSpotsArray);
