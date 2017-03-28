@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.IO;
 using System.Web.Http;
 using TopSpotAPI.Models;
@@ -19,26 +20,19 @@ namespace TopSpotAPI.Controllers
             return Ok(topSpotsArray);
         }
 
-        [HttpPost]
+        [HttpPost, Route("api/getTopSpots")]
         public IHttpActionResult PostTopSpot(TopSpot topSpot)
         {
-            string topSpotsFile = File.ReadAllText("C:\\Users\\Arlin\\Documents\\Visual Studio 2013\\Projects\\OriginCodeAcademy\\TopSpot\\topsSpots.json");
+            string topSpotsFile = File.ReadAllText(JsonUri);
 
-            TopSpot[] topSpotsArray = JsonConvert.DeserializeObject<TopSpot[]>(topSpotsFile);
-
-            // how to add topspot to the array
-            TopSpot newTopSpot = new TopSpot
-            {
-                Name = "0000000",
-                Description = "ASDFKJSHDFKJSHFD"
-            };
-            topSpotsArray[0] = newTopSpot;
-
+            List<TopSpot> topSpotsList = JsonConvert.DeserializeObject<List<TopSpot>>(topSpotsFile);
+            topSpotsList.Add(topSpot);
+            
             // reserealize the array
-            topSpotsFile = JsonConvert.SerializeObject(topSpotsArray);
-            File.WriteAllText("C:\\Users\\Arlin\\Documents\\Visual Studio 2013\\Projects\\OriginCodeAcademy\\TopSpot\\topsSpots.json", topSpotsFile);
+            topSpotsFile = JsonConvert.SerializeObject(topSpotsList);
+            File.WriteAllText(JsonUri, topSpotsFile);
 
-            return Ok(topSpotsArray);
+            return Ok(topSpotsList);
         }
     }
 }
