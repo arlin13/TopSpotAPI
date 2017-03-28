@@ -2,7 +2,7 @@
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace TopSpot
+namespace TopSpotAPI
 {
     public static class WebApiConfig
     {

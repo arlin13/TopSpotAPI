@@ -1,5 +1,5 @@
 ﻿
-namespace TopSpot.Models
+namespace TopSpotAPI.Models
 {
     public class TopSpot
     {

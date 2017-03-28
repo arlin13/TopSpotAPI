@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopSpot", "TopSpot\TopSpot.csproj", "{AEB04869-5408-4A81-A038-DAC1ACBF7E49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopSpotAPI", "TopSpot\TopSpotAPI.csproj", "{AEB04869-5408-4A81-A038-DAC1ACBF7E49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
